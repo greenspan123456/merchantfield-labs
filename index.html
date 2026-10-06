@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MerchantField Labs — WarrantyDesk | Product Registration & Warranty Management for Wix</title>
+<meta name="description" content="MerchantField Labs builds focused after-sales tools for online stores. WarrantyDesk brings product registration, warranty records and claims management to Wix stores.">
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&display=swap" rel="stylesheet">
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      fontFamily: {
+        sans: ['Inter', 'system-ui', 'sans-serif'],
+        serif: ['Newsreader', 'Georgia', 'serif'],
+      },
+    },
+  },
+}
+</script>
+<style>
+  html { scroll-behavior: smooth; }
+  ::selection { background: #111; color: #fff; }
+</style>
+</head>
+<body class="bg-white text-neutral-900 font-sans antialiased">
+
+<!-- ===== Nav ===== -->
+<header class="sticky top-0 z-50 border-b border-neutral-200 bg-white/90 backdrop-blur">
+  <div class="mx-auto flex max-w-6xl items-center justify-between px-5 py-4">
+    <a href="#top" class="flex items-center gap-2.5">
+      <span class="flex h-8 w-8 items-center justify-center rounded-md bg-neutral-900 text-white">
+        <i class="fa fa-check-square-o text-[15px]" aria-hidden="true"></i>
+      </span>
+      <span class="text-[17px] font-bold tracking-tight">MerchantField&nbsp;Labs</span>
+    </a>
+    <nav class="hidden items-center gap-7 text-sm font-medium text-neutral-600 md:flex">
+      <a href="#product" class="hover:text-neutral-900">WarrantyDesk</a>
+      <a href="#pricing" class="hover:text-neutral-900">Pricing</a>
+      <a href="#about" class="hover:text-neutral-900">Studio</a>
+      <a href="#support" class="hover:text-neutral-900">Support</a>
+      <a href="#privacy" class="hover:text-neutral-900">Privacy</a>
+      <a href="#terms" class="hover:text-neutral-900">Terms</a>
+    </nav>
+    <a href="#pricing" class="rounded-full bg-neutral-900 px-4 py-2 text-sm font-semibold text-white transition hover:bg-neutral-700">
+      Get started
+    </a>
+  </div>
+</header>
+
+<!-- ===== Hero ===== -->
+<section id="top" class="border-b border-neutral-200">
+  <div class="mx-auto grid max-w-6xl gap-12 px-5 py-20 md:grid-cols-[1.15fr_0.85fr] md:py-28">
+    <div>
+      <p class="mb-5 inline-flex items-center gap-2 rounded-full border border-neutral-300 px-3 py-1 text-xs font-semibold tracking-wide text-neutral-600">
+        <i class="fa fa-rocket" aria-hidden="true"></i>
+        COMING SOON TO THE WIX APP MARKET
+      </p>
+      <h1 class="text-4xl font-extrabold leading-[1.08] tracking-tight md:text-6xl">
+        Product registration &amp; warranty management,<span class="font-serif font-medium italic"> done right.</span>
+      </h1>
+      <p class="mt-6 max-w-xl text-lg leading-relaxed text-neutral-600">
+        <strong class="font-semibold text-neutral-900">WarrantyDesk</strong> lets your customers register
+        products in seconds — and lets your team handle warranty claims without a single email thread.
+        Built natively for Wix.
+      </p>
+      <div class="mt-8 flex flex-wrap items-center gap-4">
+        <a href="#pricing" class="rounded-full bg-neutral-900 px-6 py-3 text-sm font-semibold text-white transition hover:bg-neutral-700">
+          See pricing
+        </a>
+        <a href="#product" class="rounded-full border border-neutral-300 px-6 py-3 text-sm font-semibold text-neutral-800 transition hover:border-neutral-900">
+          How it works
+        </a>
+      </div>
+      <p class="mt-6 text-sm text-neutral-500">
+        Free plan available · Set up in under 10 minutes · No code required
+      </p>
+    </div>
+
+    <!-- 产品界面示意卡 -->
+    <div class="self-center">
+      <div class="rounded-2xl border border-neutral-200 bg-neutral-50 p-2 shadow-xl shadow-neutral-200/60">
+        <div class="rounded-xl border border-neutral-200 bg-white">
+          <div class="flex items-center gap-1.5 border-b border-neutral-200 px-4 py-3">
+            <span class="h-2.5 w-2.5 rounded-full bg-neutral-200"></span>
+            <span class="h-2.5 w-2.5 rounded-full bg-neutral-200"></span>
+            <span class="h-2.5 w-2.5 rounded-full bg-neutral-200"></span>
+            <span class="ml-3 text-xs font-medium text-neutral-400">WarrantyDesk · Merchant dashboard</span>
+          </div>
+          <div class="space-y-3 p-4">
+            <div class="flex items-center justify-between">
+              <p class="text-sm font-bold">Product registrations</p>
+              <span class="rounded-full bg-neutral-900 px-2 py-0.5 text-[11px] font-semibold text-white">This month: 128</span>
+            </div>
+            <div class="grid grid-cols-3 gap-2 text-center">
+              <div class="rounded-lg border border-neutral-200 p-3">
+                <p class="text-xl font-extrabold">1,204</p>
+                <p class="mt-0.5 text-[11px] font-medium text-neutral-500">Registered</p>
+              </div>
+              <div class="rounded-lg border border-neutral-200 p-3">
+                <p class="text-xl font-extrabold">37</p>
+                <p class="mt-0.5 text-[11px] font-medium text-neutral-500">Active claims</p>
+              </div>
+              <div class="rounded-lg border border-neutral-200 p-3">
+                <p class="text-xl font-extrabold">92%</p>
+                <p class="mt-0.5 text-[11px] font-medium text-neutral-500">In warranty</p>
+              </div>
+            </div>
+            <div class="divide-y divide-neutral-100 rounded-lg border border-neutral-200 text-xs">
+              <div class="flex items-center justify-between px-3 py-2.5">
+                <span class="font-medium">#SN-88412 · Espresso Machine</span>
+                <span class="rounded bg-green-100 px-1.5 py-0.5 font-semibold text-green-800">Registered</span>
+              </div>
+              <div class="flex items-center justify-between px-3 py-2.5">
+                <span class="font-medium">#SN-87901 · Cordless Drill</span>
+                <span class="rounded bg-amber-100 px-1.5 py-0.5 font-semibold text-amber-800">Claim · In review</span>
+              </div>
+              <div class="flex items-center justify-between px-3 py-2.5">
+                <span class="font-medium">#SN-87155 · Desk Lamp</span>
+                <span class="rounded bg-neutral-100 px-1.5 py-0.5 font-semibold text-neutral-600">Warranty expired</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Product ===== -->
+<section id="product" class="border-b border-neutral-200">
+  <div class="mx-auto max-w-6xl px-5 py-20">
+    <div class="max-w-2xl">
+      <p class="text-sm font-bold uppercase tracking-widest text-neutral-400">WarrantyDesk</p>
+      <h2 class="mt-3 text-3xl font-extrabold tracking-tight md:text-4xl">Everything after the sale, in one place</h2>
+      <p class="mt-4 text-lg leading-relaxed text-neutral-600">
+        Most stores handle warranties over email and spreadsheets. WarrantyDesk replaces both —
+        a registration page for your customers, a workbench for your team.
+      </p>
+    </div>
+
+    <div class="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+      <div class="rounded-2xl border border-neutral-200 p-6">
+        <span class="flex h-10 w-10 items-center justify-center rounded-lg bg-neutral-900 text-white"><i class="fa fa-pencil-square-o"></i></span>
+        <h3 class="mt-4 font-bold">Product registration</h3>
+        <p class="mt-2 text-sm leading-relaxed text-neutral-600">
+          Customers register with order number, email and serial number. No account creation, no friction.
+        </p>
+      </div>
+      <div class="rounded-2xl border border-neutral-200 p-6">
+        <span class="flex h-10 w-10 items-center justify-center rounded-lg bg-neutral-900 text-white"><i class="fa fa-file-text-o"></i></span>
+        <h3 class="mt-4 font-bold">Warranty records</h3>
+        <p class="mt-2 text-sm leading-relaxed text-neutral-600">
+          Every registration creates a warranty record with purchase date, coverage window and proof of purchase.
+        </p>
+      </div>
+      <div class="rounded-2xl border border-neutral-200 p-6">
+        <span class="flex h-10 w-10 items-center justify-center rounded-lg bg-neutral-900 text-white"><i class="fa fa-exchange"></i></span>
+        <h3 class="mt-4 font-bold">Claims portal</h3>
+        <p class="mt-2 text-sm leading-relaxed text-neutral-600">
+          Customers submit claims with photos and track status. You review, approve or decline — with a full audit trail.
+        </p>
+      </div>
+      <div class="rounded-2xl border border-neutral-200 p-6">
+        <span class="flex h-10 w-10 items-center justify-center rounded-lg bg-neutral-900 text-white"><i class="fa fa-table"></i></span>
+        <h3 class="mt-4 font-bold">Merchant dashboard</h3>
+        <p class="mt-2 text-sm leading-relaxed text-neutral-600">
+          Search, filter, update statuses and export everything to CSV — right inside your Wix dashboard.
+        </p>
+      </div>
+    </div>
+
+    <!-- 三步流程 -->
+    <div class="mt-14 grid gap-6 md:grid-cols-3">
+      <div class="rounded-2xl bg-neutral-900 p-7 text-white">
+        <p class="text-sm font-bold text-neutral-400">STEP 1</p>
+        <h3 class="mt-2 text-lg font-bold">Add WarrantyDesk to your Wix store</h3>
+        <p class="mt-2 text-sm leading-relaxed text-neutral-300">One click from the Wix App Market. Works with your existing catalog and orders.</p>
+      </div>
+      <div class="rounded-2xl bg-neutral-900 p-7 text-white">
+        <p class="text-sm font-bold text-neutral-400">STEP 2</p>
+        <h3 class="mt-2 text-lg font-bold">Share your registration page</h3>
+        <p class="mt-2 text-sm leading-relaxed text-neutral-300">A branded page or QR code on your packaging. Customers register in under a minute.</p>
+      </div>
+      <div class="rounded-2xl bg-neutral-900 p-7 text-white">
+        <p class="text-sm font-bold text-neutral-400">STEP 3</p>
+        <h3 class="mt-2 text-lg font-bold">Manage claims like a pro</h3>
+        <p class="mt-2 text-sm leading-relaxed text-neutral-300">Every claim arrives with context: order, serial, photos, warranty status. Decide in one glance.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Pricing ===== -->
+<section id="pricing" class="border-b border-neutral-200 bg-neutral-50">
+  <div class="mx-auto max-w-6xl px-5 py-20">
+    <div class="mx-auto max-w-2xl text-center">
+      <p class="text-sm font-bold uppercase tracking-widest text-neutral-400">Pricing</p>
+      <h2 class="mt-3 text-3xl font-extrabold tracking-tight md:text-4xl">Free to start. Fair as you grow.</h2>
+      <p class="mt-4 text-lg text-neutral-600">Prices in USD. Cancel anytime. Annual billing saves 2 months.</p>
+    </div>
+
+    <div class="mt-12 grid gap-6 md:grid-cols-3">
+      <!-- Free -->
+      <div class="flex flex-col rounded-2xl border border-neutral-200 bg-white p-7">
+        <h3 class="font-bold">Starter</h3>
+        <p class="mt-1 text-sm text-neutral-500">For small stores getting organized</p>
+        <p class="mt-5 text-4xl font-extrabold">$0<span class="text-base font-medium text-neutral-400">/mo</span></p>
+        <ul class="mt-6 space-y-2.5 text-sm text-neutral-600">
+          <li><i class="fa fa-check mr-2 text-neutral-900"></i>20 registrations / month</li>
+          <li><i class="fa fa-check mr-2 text-neutral-900"></i>Warranty records &amp; coverage tracking</li>
+          <li><i class="fa fa-check mr-2 text-neutral-900"></i>Claim inbox</li>
+          <li><i class="fa fa-check mr-2 text-neutral-900"></i>CSV export</li>
+        </ul>
+        <a href="#support" class="mt-7 rounded-full border border-neutral-300 py-2.5 text-center text-sm font-semibold transition hover:border-neutral-900">Start free</a>
+      </div>
+
+      <!-- Pro -->
+      <div class="relative flex flex-col rounded-2xl border-2 border-neutral-900 bg-white p-7 shadow-lg shadow-neutral-200">
+        <span class="absolute -top-3 left-7 rounded-full bg-neutral-900 px-3 py-1 text-xs font-bold text-white">MOST POPULAR</span>
+        <h3 class="font-bold">Pro</h3>
+        <p class="mt-1 text-sm text-neutral-500">For growing brands</p>
+        <p class="mt-5 text-4xl font-extrabold">$15<span class="text-base font-medium text-neutral-400">/mo</span></p>
+        <p class="text-sm text-neutral-500">or $150/year</p>
+        <ul class="mt-6 space-y-2.5 text-sm text-neutral-600">
+          <li><i class="fa fa-check mr-2 text-neutral-900"></i>300 registrations / month</li>
+          <li><i class="fa fa-check mr-2 text-neutral-900"></i>Custom registration fields</li>
+          <li><i class="fa fa-check mr-2 text-neutral-900"></i>Branded registration page</li>
+          <li><i class="fa fa-check mr-2 text-neutral-900"></i>QR registration codes</li>
+          <li><i class="fa fa-check mr-2 text-neutral-900"></i>Automatic email confirmations</li>
+        </ul>
+        <a href="#support" class="mt-7 rounded-full bg-neutral-900 py-2.5 text-center text-sm font-semibold text-white transition hover:bg-neutral-700">Choose Pro</a>
+      </div>
+
+      <!-- Business -->
+      <div class="flex flex-col rounded-2xl border border-neutral-200 bg-white p-7">
+        <h3 class="font-bold">Business</h3>
+        <p class="mt-1 text-sm text-neutral-500">For serious after-sales operations</p>
+        <p class="mt-5 text-4xl font-extrabold">$29<span class="text-base font-medium text-neutral-400">/mo</span></p>
+        <p class="text-sm text-neutral-500">or $290/year</p>
+        <ul class="mt-6 space-y-2.5 text-sm text-neutral-600">
+          <li><i class="fa fa-check mr-2 text-neutral-900"></i>1,000 registrations / month</li>
+          <li><i class="fa fa-check mr-2 text-neutral-900"></i>Claims with photo &amp; video evidence</li>
+          <li><i class="fa fa-check mr-2 text-neutral-900"></i>Claim status tracking for customers</li>
+          <li><i class="fa fa-check mr-2 text-neutral-900"></i>Bulk serial number import</li>
+          <li><i class="fa fa-check mr-2 text-neutral-900"></i>Multi-language pages</li>
+          <li><i class="fa fa-check mr-2 text-neutral-900"></i>Remove WarrantyDesk branding</li>
+        </ul>
+        <a href="#support" class="mt-7 rounded-full border border-neutral-300 py-2.5 text-center text-sm font-semibold transition hover:border-neutral-900">Choose Business</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== About / Studio ===== -->
+<section id="about" class="border-b border-neutral-200">
+  <div class="mx-auto grid max-w-6xl gap-10 px-5 py-20 md:grid-cols-2">
+    <div>
+      <p class="text-sm font-bold uppercase tracking-widest text-neutral-400">The studio</p>
+      <h2 class="mt-3 text-3xl font-extrabold tracking-tight md:text-4xl">MerchantField Labs</h2>
+      <p class="mt-5 leading-relaxed text-neutral-600">
+        MerchantField Labs is an independent software studio building focused, reliable after-sales
+        tools for online stores. We believe the sale isn't the end of the relationship — it's the start.
+      </p>
+      <p class="mt-4 leading-relaxed text-neutral-600">
+        Our first product, <strong class="font-semibold text-neutral-900">WarrantyDesk</strong>, brings
+        product registration and warranty management to Wix stores. We build natively on the Wix
+        platform, which keeps setup simple and your data in one place.
+      </p>
+      <dl class="mt-8 grid grid-cols-2 gap-6 text-sm">
+        <div>
+          <dt class="font-semibold">Focus</dt>
+          <dd class="mt-1 text-neutral-600">E-commerce after-sales tools · Wix platform integrations</dd>
+        </div>
+        <div>
+          <dt class="font-semibold">Team</dt>
+          <dd class="mt-1 text-neutral-600">Small independent studio, founded 2026</dd>
+        </div>
+      </dl>
+    </div>
+    <div class="self-center rounded-2xl border border-neutral-200 bg-neutral-50 p-8">
+      <i class="fa fa-quote-left text-2xl text-neutral-300"></i>
+      <p class="mt-4 font-serif text-xl italic leading-relaxed text-neutral-700">
+        A warranty shouldn't live in a shoebox of receipts. Every product deserves a record,
+        and every customer deserves a straight answer.
+      </p>
+      <p class="mt-4 text-sm font-semibold">— The MerchantField Labs team</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Support ===== -->
+<section id="support" class="border-b border-neutral-200 bg-neutral-50">
+  <div class="mx-auto max-w-3xl px-5 py-20 text-center">
+    <p class="text-sm font-bold uppercase tracking-widest text-neutral-400">Support</p>
+    <h2 class="mt-3 text-3xl font-extrabold tracking-tight md:text-4xl">Talk to a human</h2>
+    <p class="mt-4 text-lg text-neutral-600">
+      Questions about WarrantyDesk, pricing or the Wix App Market listing? We reply within one business day.
+    </p>
+    <!-- TODO: 上线前替换为真实客服邮箱 -->
+    <a href="mailto:support@merchantfieldlabs.com" class="mt-7 inline-flex items-center gap-3 rounded-full bg-neutral-900 px-7 py-3.5 text-sm font-semibold text-white transition hover:bg-neutral-700">
+      <i class="fa fa-envelope-o"></i> support@merchantfieldlabs.com
+    </a>
+    <p class="mt-4 text-sm text-neutral-500">Monday – Friday, 9:00–18:00 (UTC+8)</p>
+  </div>
+</section>
+
+<!-- ===== Privacy Policy ===== -->
+<section id="privacy" class="border-b border-neutral-200">
+  <div class="mx-auto max-w-3xl px-5 py-20">
+    <p class="text-sm font-bold uppercase tracking-widest text-neutral-400">Legal</p>
+    <h2 class="mt-3 text-3xl font-extrabold tracking-tight">Privacy Policy</h2>
+    <p class="mt-2 text-sm text-neutral-500">Last updated: October 7, 2026</p>
+
+    <div class="mt-8 space-y-8 text-[15px] leading-relaxed text-neutral-700">
+      <div>
+        <h3 class="font-bold text-neutral-900">1. Who we are</h3>
+        <p class="mt-2">MerchantField Labs ("we", "us") is the developer of the WarrantyDesk application available on the Wix App Market. This policy explains what data WarrantyDesk collects, why, and what rights you have.</p>
+      </div>
+      <div>
+        <h3 class="font-bold text-neutral-900">2. Data we collect</h3>
+        <ul class="mt-2 list-disc space-y-1.5 pl-5">
+          <li><strong>Product registration data:</strong> order number, customer email address, product name, serial number and purchase date, submitted by customers on the store's registration page.</li>
+          <li><strong>Warranty claim data:</strong> claim description, attached photos or videos, and claim status.</li>
+          <li><strong>Merchant account data:</strong> your Wix account identifier and store configuration settings.</li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="font-bold text-neutral-900">3. How we use data</h3>
+        <p class="mt-2">Registration and claim data is used solely to provide the WarrantyDesk service: creating warranty records, processing claims and displaying them in the merchant dashboard. We do not sell personal data. We do not use customer data for advertising.</p>
+      </div>
+      <div>
+        <h3 class="font-bold text-neutral-900">4. Where data is stored</h3>
+        <p class="mt-2">WarrantyDesk runs on Wix's infrastructure. Data is stored within the store's Wix account. We do not transfer customer data to additional third-party servers.</p>
+      </div>
+      <div>
+        <h3 class="font-bold text-neutral-900">5. Retention and deletion</h3>
+        <p class="mt-2">Data is retained as long as the merchant's WarrantyDesk subscription is active. When a merchant uninstalls WarrantyDesk, all registration and claim data associated with that store is deleted within 30 days. Merchants and their customers may request earlier deletion by contacting us.</p>
+      </div>
+      <div>
+        <h3 class="font-bold text-neutral-900">6. Your rights (GDPR)</h3>
+        <p class="mt-2">If you are located in the European Economic Area, you have the right to access, correct, export and erase your personal data, and to object to processing. To exercise these rights, contact the store where you registered your product or email us directly; we respond within 30 days.</p>
+      </div>
+      <div>
+        <h3 class="font-bold text-neutral-900">7. Contact</h3>
+        <p class="mt-2">Privacy questions: <a href="mailto:support@merchantfieldlabs.com" class="font-medium underline underline-offset-2">support@merchantfieldlabs.com</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Terms ===== -->
+<section id="terms" class="border-b border-neutral-200 bg-neutral-50">
+  <div class="mx-auto max-w-3xl px-5 py-20">
+    <h2 class="text-3xl font-extrabold tracking-tight">Terms of Service</h2>
+    <p class="mt-2 text-sm text-neutral-500">Last updated: October 7, 2026</p>
+
+    <div class="mt-8 space-y-8 text-[15px] leading-relaxed text-neutral-700">
+      <div>
+        <h3 class="font-bold text-neutral-900">1. The service</h3>
+        <p class="mt-2">WarrantyDesk is a Wix application that provides product registration, warranty record keeping and warranty claim management for online stores. By installing or using WarrantyDesk you agree to these terms.</p>
+      </div>
+      <div>
+        <h3 class="font-bold text-neutral-900">2. Plans and billing</h3>
+        <p class="mt-2">WarrantyDesk offers a free Starter plan and paid Pro and Business plans. Paid plans are billed monthly or annually through Wix's billing system. Subscriptions renew automatically until cancelled. If you cancel, you keep access until the end of the paid period.</p>
+      </div>
+      <div>
+        <h3 class="font-bold text-neutral-900">3. Refunds</h3>
+        <p class="mt-2">Refunds for paid plans are handled according to Wix's refund policy for app purchases. If you believe you were charged in error, contact us and we will review your case.</p>
+      </div>
+      <div>
+        <h3 class="font-bold text-neutral-900">4. Acceptable use</h3>
+        <p class="mt-2">You may not use WarrantyDesk to collect data unrelated to product registration, to send unsolicited messages, or in any way that violates applicable law or Wix's terms of use.</p>
+      </div>
+      <div>
+        <h3 class="font-bold text-neutral-900">5. Your data</h3>
+        <p class="mt-2">You own the registration and claim data collected through WarrantyDesk. We process it on your behalf only to provide the service, as described in our Privacy Policy. You may export your data to CSV at any time.</p>
+      </div>
+      <div>
+        <h3 class="font-bold text-neutral-900">6. Limitation of liability</h3>
+        <p class="mt-2">WarrantyDesk is provided "as is". To the maximum extent permitted by law, MerchantField Labs is not liable for indirect or consequential damages, or for losses arising from warranty decisions made by merchants using the service.</p>
+      </div>
+      <div>
+        <h3 class="font-bold text-neutral-900">7. Changes and termination</h3>
+        <p class="mt-2">We may update these terms as the service evolves; material changes will be announced in the app. You may stop using WarrantyDesk at any time by uninstalling it, after which your data is deleted as described in the Privacy Policy.</p>
+      </div>
+      <div>
+        <h3 class="font-bold text-neutral-900">8. Contact</h3>
+        <p class="mt-2">Questions about these terms: <a href="mailto:support@merchantfieldlabs.com" class="font-medium underline underline-offset-2">support@merchantfieldlabs.com</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Footer ===== -->
+<footer class="bg-neutral-900 text-neutral-400">
+  <div class="mx-auto flex max-w-6xl flex-col items-center justify-between gap-4 px-5 py-10 text-sm sm:flex-row">
+    <div class="flex items-center gap-2.5 text-white">
+      <span class="flex h-7 w-7 items-center justify-center rounded-md bg-white text-neutral-900"><i class="fa fa-check-square-o text-[13px]"></i></span>
+      <span class="font-bold">MerchantField Labs</span>
+    </div>
+    <nav class="flex flex-wrap items-center gap-5">
+      <a href="#product" class="hover:text-white">WarrantyDesk</a>
+      <a href="#pricing" class="hover:text-white">Pricing</a>
+      <a href="#support" class="hover:text-white">Support</a>
+      <a href="#privacy" class="hover:text-white">Privacy</a>
+      <a href="#terms" class="hover:text-white">Terms</a>
+    </nav>
+    <p>© 2026 MerchantField Labs. All rights reserved.</p>
+  </div>
+</footer>
+
+</body>
+</html>
